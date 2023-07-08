@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+header{
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+header li{
+    display: inline;
+    list-style: none;
+}
+
+header li a{
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 2rem;
+}
+
+header button{
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #4feef6;
+    font-size: 1.5rem;
+}
+.modal-container{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 3rem;
+}
