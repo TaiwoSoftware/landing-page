@@ -3,15 +3,19 @@
     padding: 0;
     box-sizing: inherit;
 }
+
+@font-face {
+    font-family: 'newFont';
+    src: url(Asap_Condensed/AsapCondensed-Regular.ttf);
+}
 html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: sans-serif;
+    font-family: 'newFont',Arial, Helvetica, sans-serif;
     background-color: rgb(0, 0, 0);
-    
 }
 header{
     padding: 3rem;
@@ -27,7 +31,7 @@ header li a{
     color: white;
     text-decoration: none;
     margin-right: 2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 header li a:hover {
@@ -40,12 +44,13 @@ header button{
     border-radius: 1rem;
     border: none;
     background-color: #4feef6;
-    font-size: 1rem;
+    font-size: .9rem;
     cursor: pointer;
     transition: all 2s;
 }
 
-header button:hover {
+header button:hover, .signInBtn:hover {
+    transition: all 2s;
     background-color: #0c9fa7;
     color: white;
 }
@@ -151,4 +156,112 @@ h1{
     font-size: 2rem;
     margin-top: 10rem;
     float: right;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+.main-header-text{
+    font-size: 3rem;
+    position: absolute;
+    left: 6rem;
+    top: 20rem;
+}
+
+.main-header p{
+    color: gray;
+    font-size: 1rem;
+}
+.main-header h1{
+    color: #4feef6;
+    width: 100%;
+    display: inline;
+    font-size: 4rem;
+    justify-content: space-between;
+}
+.main-header span {
+    color: white;
+}
+
+.header-img{
+    width: 30%;
+    margin-left: 50rem;
+    margin-top: 2rem;
+}
+
+.signInBtn {
+    background-color: #4feef6;
+    border: none;
+    border-radius: .5rem;
+    color: black;
+    padding: 1rem 3rem;
+    /* display: block;
+    cursor: pointer; */
+    margin: 4rem 0;
+    cursor: pointer;
+}
+
+.signInBtn:hover{
+    background-color: transparent;
+    border: 1px solid #4feef6;
+    color: #4feef6;
+}
+
+
+
+.component{
+    margin-top: 5rem;
+    background-color: #0c9fa7;
+    padding: 2rem 6rem;
+    z-index: 10;
+    margin-bottom: 2rem;
+}
+
+h2{
+    text-align: center;
+    font-weight: 100;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.component p{
+    text-align: center;
+}
+
+.box{
+    border-radius: 50%;
+    width: 30%;
+    margin-top: 5rem;
+    
+}
+
+.inner-component p{
+    position: absolute;
+    margin-left: 30rem;
+    text-align: justify;
+    margin-top: -17rem;
+    width: 50%;
+}
+
+.benefits h1{
+    color: #4feef6;
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 4rem;
+}
+.benefits p{
+    color: white;
+    text-align: center;
+}
+
+table{
+    padding: 3rem;
+    margin-left: 17rem;
+}
+
+th,td{
+    padding: 2rem;
+    font-size: 2rem;
+    color: white;
 }

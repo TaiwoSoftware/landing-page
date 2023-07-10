@@ -7,6 +7,8 @@ const validation = document.querySelector('#validation');
 const logIn = document.querySelector('#logIn');
 const loginForm = document.querySelector('#loginForm');
 const closed = document.querySelector('#closed');
+const opens = document.querySelector('#opens');
+const logins = document.querySelector('#logins');
 
 
 // signIn
@@ -24,6 +26,7 @@ let closeModal = () => {
 openBtn.addEventListener('click', openModal);
 
 closeBtn.addEventListener('click', closeModal);
+opens.addEventListener('click',openModal);
 
 // End of Sign up
 
@@ -40,6 +43,7 @@ let closeLoginPage = () => {
 
 logIn.addEventListener('click', openLoginPage);
 closed.addEventListener('click',closeLoginPage);
+logins.addEventListener('click', openLoginPage);
 
 validation.addEventListener('click', () => {
     for (const element of inputs) {
