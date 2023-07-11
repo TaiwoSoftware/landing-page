@@ -25,9 +25,11 @@ header{
 header li{
     display: inline;
     list-style: none;
+    
 }
 
 header li a{
+    margin-top: 4rem;
     color: white;
     text-decoration: none;
     margin-right: 2rem;
@@ -36,23 +38,42 @@ header li a{
 
 header li a:hover {
     text-decoration-color: #4feef6;
-    text-decoration-line: overline;
+    text-decoration-line: underline;
 }
 
 header button{
-    padding: 1rem 4rem;
-    border-radius: 1rem;
-    border: none;
+    height: 1rem;
+    padding: 1.5rem 2rem;
     background-color: #4feef6;
-    font-size: .9rem;
+    border-radius: 1rem;
+    text-align: center;
     cursor: pointer;
-    transition: all 2s;
 }
-
-header button:hover, .signInBtn:hover {
+header button p{
+    margin-top:-.5rem;
+}
+header button:hover {
     transition: all 2s;
     background-color: #0c9fa7;
     color: white;
+}
+
+.open {
+    margin-right: -7rem;
+}
+.open:hover {
+    background-color: black;
+    border: 1px solid #4feef6;
+}
+
+.loginBtn{
+    border: 1px solid #4feef6;
+    color: #4feef6;
+    background-color: black;
+}
+
+.logo img{
+    width: 40%;
 }
 
 
@@ -227,6 +248,7 @@ h2{
 
 .component p{
     text-align: center;
+    line-height: 1.5rem;
 }
 
 .box{
@@ -238,7 +260,7 @@ h2{
 
 .inner-component p{
     position: absolute;
-    margin-left: 30rem;
+    margin-left: 25rem;
     text-align: justify;
     margin-top: -17rem;
     width: 50%;
@@ -264,4 +286,27 @@ th,td{
     padding: 2rem;
     font-size: 2rem;
     color: white;
+}
+
+.contact {
+    margin-top: 4rem;
+    background-color: rgb(74, 74, 74);
+    padding: 2rem 6rem;
+}
+
+.contact-h2{
+    font-size: 3rem;
+}
+.contact p{
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+hr{
+    margin-top: 5rem;
+    border-color: gray;
+}
+
+footer img{
+    width: 5%;
 }
