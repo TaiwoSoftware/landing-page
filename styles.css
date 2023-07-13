@@ -308,5 +308,62 @@ hr{
 }
 
 footer img{
-    width: 5%;
+    width: 30px;
+    margin-left: 1rem;
+}
+footer a{
+    text-decoration: none;
+}
+
+.link{
+    margin-top: 1rem;
+    margin-left: 20rem;
+}
+
+@media (max-width: 1030px) {
+    body{
+        font-family: sans-serif;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    header ul{
+        margin-left: -10rem;
+    }
+
+    header li{
+        font-size: 3rem;
+        
+    }
+
+    header button{
+        padding: 1.5rem 2rem;
+    }
+
+    .logo img{
+        width: 30%;
+    }
+
+    .modal, .logIn {
+        left: 10%;
+    }
+
+    .main-header h1{
+        margin-left: -4rem;
+        font-size: 3rem;
+    }
+    .main-header p{
+        margin-left: -4rem;
+    }
+
+    .signInBtn {
+        margin-left: -4rem;
+    }
+
+    .header-img {
+        margin-left: 40rem;
+    }
+    
 }

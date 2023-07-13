@@ -4,11 +4,11 @@ const modal = document.querySelector('#modal');
 const overlay = document.querySelector('#overlay');
 const inputs = document.querySelectorAll('input');
 const validation = document.querySelector('#validation');
+const loginValidation = document.querySelector('#logInvalidation');
 const logIn = document.querySelector('#logIn');
 const loginForm = document.querySelector('#loginForm');
 const closed = document.querySelector('#closed');
 const opens = document.querySelector('#opens');
-const logins = document.querySelector('#logins');
 
 
 // signIn
@@ -43,12 +43,10 @@ let closeLoginPage = () => {
 
 logIn.addEventListener('click', openLoginPage);
 closed.addEventListener('click',closeLoginPage);
-logins.addEventListener('click', openLoginPage);
 
 validation.addEventListener('click', () => {
-    for (const element of inputs) {
-        if (element.value === '') {
-            element.style.border = '1px solid red';
-        }
-    };
+    localStorage.setItem('userName', inputs[0].value);
+    localStorage.setItem('userLastname', inputs[1].value);
+    localStorage.setItem('userEmail', inputs[2].value);
+    localStorage.setItem('userPassword', inputs[3].value);
 });
