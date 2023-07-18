@@ -342,6 +342,10 @@ footer a{
         padding: 1.5rem 2rem;
     }
 
+    .open{
+        margin-left: -4rem;
+    }
+
     .logo img{
         width: 30%;
     }
@@ -365,5 +369,104 @@ footer a{
     .header-img {
         margin-left: 40rem;
     }
+
+    .inner-component p{
+        font-size: .9rem;
+        margin-left: 20rem;
+        margin-top: -15rem;
+    }
+
+    table{
+        margin-left:10rem;
+    }
+
+    .link{
+        margin-left: 10rem;
+    }
+
+    .inner-component span{
+        display: none;
+    }
     
+}
+@media (max-width:940px) {
+    nav{
+        margin-left: -5rem;
+    }
+    .open {
+        margin-left: -3rem
+    }
+
+    .header-img {
+        margin-left: 35rem;
+    }
+
+    .link{
+        margin-left: 5rem;
+    }
+
+    .component p{
+        font-size: .9rem;
+    }
+    .inner-component p{
+        margin-left: 17rem;
+    }
+
+    table{
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width:930px) {
+    .inner-component p {
+        margin-left: 16rem;
+    }
+    table {
+        margin-left: 4rem;
+    }
+}
+
+@media (max-width:935px) {
+    .open{
+        margin-left: -5rem;
+    }
+}
+
+
+
+@media (max-width:910px) {
+    .component p{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width:870px) {
+    .open {
+        margin-left: -9rem;
+    }
+}
+
+@media (max-width:855px) {
+    .header-img {
+        margin-left: 32rem;
+    }
+    .open {
+        padding: 1.5rem 1rem;
+    }
+
+    .component p {
+        font-size: .8rem;
+    }
+
+    table{
+        margin-left: 1rem;
+    }
+
+    .inner-component p {
+        font-size: .8rem;
+    }
+
+    .link {
+        margin-left: 3rem;
+    }
 }

@@ -50,3 +50,4 @@ validation.addEventListener('click', () => {
     localStorage.setItem('userEmail', inputs[2].value);
     localStorage.setItem('userPassword', inputs[3].value);
 });
+
