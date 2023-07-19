@@ -470,3 +470,31 @@ footer a{
         margin-left: 3rem;
     }
 }
+
+@media (max-width:791px) {
+    nav {
+        margin-left: 1rem;
+    }
+
+    table{
+        margin-left:.3rem;
+    }
+    .open{
+        display:none;
+    }
+
+    .component{
+        position: relative;
+    }
+    .box {
+        margin-top: 1.5rem;
+    }
+    .box-details{
+        position: absolute;
+        top: 30rem;
+    }
+
+    .benefits h1{
+        font-size: 2rem;
+    }
+}
